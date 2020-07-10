@@ -8,9 +8,9 @@ Hacker thực thụ không dùng chuột và [Graphical User Interface (GUI)](ht
 
 Một [terminal emulator](http://raboninco.com/1JlFq), gọi tắt là _terminal_, là một ứng dụng cung cấp giao diện dòng lệnh giúp kết nối người dùng với hệ điều hành. Terminal xử lý các văn bản thông qua các ký tự (_character-based_) được người dùng nhập từ bàn phím và hiển thị thành dạng văn bản trong cửa sổ giao diện. Terminal dùng **shell**, một ứng dụng đặc thù, để diễn dịch các lệnh mà người dùng đã gõ vào.
 
-Có rất nhiều ứng dụng [terminal dành cho Windows, Mac OS X và Linux](https://en.wikipedia.org/wiki/List_of_terminal_emulators). Ví dụ:
+Có rất nhiều ứng dụng [terminal dành cho Windows, Mac OS X và Linux](http://raboninco.com/1JlMw). Ví dụ:
 
-| [Windows: Command Prompt](https://en.wikipedia.org/wiki/Cmd.exe)     | [Mac OS X: iTerm2](https://en.wikipedia.org/wiki/ITerm2) | [Linux: GNOME Terminal](https://en.wikipedia.org/wiki/GNOME_Terminal)                    |
+| [Windows: Command Prompt](http://raboninco.com/1JlNz)     | [Mac OS X: iTerm2](http://raboninco.com/1JlOl) | [Linux: GNOME Terminal](http://raboninco.com/1JlSQ)                    |
 | -------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | ![Windows 10 Command Prompt](terminal_windows_10_command_prompt.png) | ![Mac OS X iTerm2](terminal_mac_os_x_iterm2.png)         | ![Ubuntu Desktop 16.04 GNOME Terminal](terminal_ubuntu_desktop_16.04_gnome_terminal.png) |
 
