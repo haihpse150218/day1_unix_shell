@@ -2,11 +2,11 @@
 
 ![The Matrix: Neo](the_matrix_neo.jpg)
 
-Hacker thực thụ không dùng chuột và [Graphical User Interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface) (Giao diện đồ họa người dùng) để kiểm soát máy tính. Họ dùng bàn phím và [Command-Line Interface (CLI)](https://en.wikipedia.org/wiki/Command-line_interface) (Giao diện dòng lệnh): đó là một **terminal emulator** (chương trình giả lập thiết bị đầu cuối) sử dụng ứng dụng **shell**.
+Hacker thực thụ không dùng chuột và [Graphical User Interface (GUI)](http://raboninco.com/1JlDF) (Giao diện đồ họa người dùng) để kiểm soát máy tính. Họ dùng bàn phím và [Command-Line Interface (CLI)](http://raboninco.com/1JlEf) (Giao diện dòng lệnh): đó là một **terminal emulator** (chương trình giả lập thiết bị đầu cuối) sử dụng ứng dụng **shell**.
 
 ## Terminal
 
-Một [terminal emulator](https://en.wikipedia.org/wiki/Terminal_emulator), gọi tắt là _terminal_, là một ứng dụng cung cấp giao diện dòng lệnh giúp kết nối người dùng với hệ điều hành. Terminal xử lý các văn bản thông qua các ký tự (_character-based_) được người dùng nhập từ bàn phím và hiển thị thành dạng văn bản trong cửa sổ giao diện. Terminal dùng **shell**, một ứng dụng đặc thù, để diễn dịch các lệnh mà người dùng đã gõ vào.
+Một [terminal emulator](http://raboninco.com/1JlFq), gọi tắt là _terminal_, là một ứng dụng cung cấp giao diện dòng lệnh giúp kết nối người dùng với hệ điều hành. Terminal xử lý các văn bản thông qua các ký tự (_character-based_) được người dùng nhập từ bàn phím và hiển thị thành dạng văn bản trong cửa sổ giao diện. Terminal dùng **shell**, một ứng dụng đặc thù, để diễn dịch các lệnh mà người dùng đã gõ vào.
 
 Có rất nhiều ứng dụng [terminal dành cho Windows, Mac OS X và Linux](https://en.wikipedia.org/wiki/List_of_terminal_emulators). Ví dụ:
 
