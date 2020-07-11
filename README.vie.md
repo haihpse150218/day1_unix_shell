@@ -1,4 +1,5 @@
-# Giới thiệu về Shell
+# Giới thiệu về Shell (cách đọc tốt nhất là HÃY nhấp vào mọi link tham khảo, vì nó đã được chọn lọc  nhé !, hãy chờ 5s và nhấn bỏ qua nhé !)
+(neu ban khong co ubuntu hay download ban ubuntu ve window xai tam)
 
 ![The Matrix: Neo](the_matrix_neo.jpg)
 
@@ -20,17 +21,17 @@ Có rất nhiều ứng dụng [terminal dành cho Windows, Mac OS X và Linux](
 
 ![Matrix: Trinity Hacking Scene with Nmap](matrix_trinity_hacking_scene.gif)
 
-Một trong những ứng dụng shell rất thông dụng dành cho các hệ điều hành Unix là [`bash`](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>). Ngoài `bash`, bạn cũng có thể cài đặt một số [ứng dụng shell](https://en.wikipedia.org/wiki/Comparison_of_command_shells) khác cho hệ điều hành.
+Một trong những ứng dụng shell rất thông dụng dành cho các hệ điều hành Unix là [`bash`](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>). Ngoài `bash`, bạn cũng có thể cài đặt một số [ứng dụng shell](http://raboninco.com/1KFXy) khác cho hệ điều hành.
 
 Vấn đề là mỗi shell sẽ sử dụng công cụ biên dịch lệnh riêng, với các cú pháp lệnh khác nhau tương ứng với các cấp độ lập trình khác nhau. Ví dụ, nếu muốn biết danh sách các tập tin trong một thư mục, bạn sẽ gõ lệnh `dir` trong `Command Prompt` dùng cho Windows, nhưng lại gõ lệnh `ls` trong `bash` dùng cho các hệ điều hành Unix.
 
 ## POSIX Shell
 
-[POSIX](https://en.wikipedia.org/wiki/POSIX) là một [chuẩn shell](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html) mà hầu hết các shell dùng cho các hệ điều hành Unix đều tuân theo. POSIX giúp cho việc phát triển các phần mềm có khả năng tương thích với nhiều hệ thống trở nên dễ dàng hơn.
+[POSIX](http://raboninco.com/1KFZY) là một [chuẩn shell](http://raboninco.com/1KFbr) mà hầu hết các shell dùng cho các hệ điều hành Unix đều tuân theo. POSIX giúp cho việc phát triển các phần mềm có khả năng tương thích với nhiều hệ thống trở nên dễ dàng hơn.
 
 Bạn sẽ dùng POSIX shell để thực hiện nhiệm vụ này.
 
-_Lưu ý: ứng dụng shell mặc định của Windows, `Command Prompt` terminal không tuân theo chuẩn POSIX. Bạn KHÔNG THỂ dùng `Command Prompt` để thực hiện nhiệm vụ này. May mắn thay, nhờ có Ubuntu, các dòng lệnh Linux sẽ có thể dùng được trên Windows - [Linux command-line comes to Windows](https://itsfoss.com/bash-on-windows/). Bạn CẦN cài đặt [Windows System for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) và một phiên bản của Linux như [Ubuntu](https://www.microsoft.com/vi-vn/p/ubuntu/9nblggh4msv6). Sau khi cài đặt, bạn có thể khởi chạy `Command Prompt` và gõ lệnh `bash` để chạy Bash shell:_
+_Lưu ý: ứng dụng shell mặc định của Windows, `Command Prompt` terminal không tuân theo chuẩn POSIX. Bạn KHÔNG THỂ dùng `Command Prompt` để thực hiện nhiệm vụ này. May mắn thay, nhờ có Ubuntu, các dòng lệnh Linux sẽ có thể dùng được trên Windows - [Linux command-line comes to Windows](http://raboninco.com/1KFkI). Bạn CẦN cài đặt [Windows System for Linux (WSL)](http://raboninco.com/1KFf8) và một phiên bản của Linux như [Ubuntu](http://raboninco.com/1KFiq). Sau khi cài đặt, bạn có thể khởi chạy `Command Prompt` và gõ lệnh `bash` để chạy Bash shell:_
 
 ![Windows 10 Command Prompt with Ubuntu Bash](terminal_windows_10_command_prompt_bash.png)
 
@@ -40,7 +41,7 @@ _Lưu ý: ứng dụng shell mặc định của Windows, `Command Prompt` termi
 
 _"Nếu bạn có thời gian để hỏi, hãy dành thời gian để học thêm nữa; thời gian của tôi rất quý báu, hãy tôn trọng nó."_
 
-[RTFM](https://en.wikipedia.org/wiki/RTFM) là một câu trả lời rất hay được dùng trong các forums hoặc mailing lists (email làm việc nhóm), khi một thành viên mới đặt một câu hỏi mà câu trả lời đã có sẵn trong tài liệu hướng dẫn.
+[RTFM](http://raboninco.com/1KFm1) là một câu trả lời rất hay được dùng trong các forums hoặc mailing lists (email làm việc nhóm), khi một thành viên mới đặt một câu hỏi mà câu trả lời đã có sẵn trong tài liệu hướng dẫn.
 
 Người trả lời câu "RTFM" có thể bị xem là sỗ sàng, nhưng người thực sự bất lịch sự chính là người làm phiền người khác mà không chịu tự tìm hiểu và nghĩ rằng người khác luôn sẵn sàng trả lời mọi câu hỏi cho mình.
 
@@ -51,7 +52,7 @@ noob: Làm thế nào để tạo cây thư mục "./a/b/c/d" bằng lệnh "mkd
 
 Hãy luôn thử tìm câu trả lời cho những câu hỏi cơ bản như vậy bằng các cách như tìm trên [Google](https://www.google.com/) hoặc [Stack Overflow](https://stackoverflow.com/), hoặc đọc tài liệu.
 
-Ví dụ, đừng bao giờ đặt câu hỏi kiểu một lệnh nào đó trong Unix shell chạy như thế nào mà không tự tìm hiểu trước. Trên trang hướng dẫn [`man` page](https://en.wikipedia.org/wiki/Man_page) có lẽ đã có [tài liệu hướng dẫn về lệnh đó](https://www.youtube.com/watch?v=uJnrh9hAQR0) với đầy đủ các arguments - tham số mà lệnh đó hỗ trợ.
+Ví dụ, đừng bao giờ đặt câu hỏi kiểu một lệnh nào đó trong Unix shell chạy như thế nào mà không tự tìm hiểu trước. Trên trang hướng dẫn [`man` page](http://raboninco.com/1KFpn) có lẽ đã có [tài liệu hướng dẫn về lệnh đó](http://raboninco.com/1KFqq) với đầy đủ các arguments - tham số mà lệnh đó hỗ trợ.
 
 Để gọi `man` page, từ cửa sổ terminal, hãy gõ lệnh `man` và tên lệnh mà bạn muốn tìm hiểu. Ví dụ, bạn muốn tìm hiểu cách dùng lệnh `pwd`:
 
@@ -122,11 +123,11 @@ Nếu bạn cần tìm một từ nào đó trong trang hướng dẫn, nhấn p
 
 # Giới thiệu về File System (hệ thống tập tin)
 
-Hệ thống tập tin [**file system**](https://en.wikipedia.org/wiki/File_system) là một cơ chế giúp lưu trữ thông tin trên một phương tiện lưu trữ nào đó, ví dụ: ổ cứng, bằng cách sắp xếp các tập tin theo một hệ thống các thư mục.
+Hệ thống tập tin [**file system**](http://raboninco.com/1KFzs) là một cơ chế giúp lưu trữ thông tin trên một phương tiện lưu trữ nào đó, ví dụ: ổ cứng, bằng cách sắp xếp các tập tin theo một hệ thống các thư mục.
 
 ## File (tập tin)
 
-File system bao gồm nhiều files. Một [**file**](https://en.wikipedia.org/wiki/Computer_file) thực chất là một dãy các [bytes](https://en.wikipedia.org/wiki/Byte).
+File system bao gồm nhiều files. Một [**file**](http://raboninco.com/1KG17) thực chất là một dãy các [bytes](http://raboninco.com/1KG1k).
 
 Ví dụ, nội dung của file [`README.md`](./README.md) bắt đầu bằng đoạn văn bản sau (văn bản là một chuỗi các ký tự):
 
@@ -138,7 +139,7 @@ Ví dụ, nội dung của file [`README.md`](./README.md) bắt đầu bằng �
 Real hackers don't use a mouse and a [Graphical User Interface (GUI)](https://en.wikipedia.org/wiki/Graphical_user_interface) applications to control a computer. They use a keyboard and a [Command-Line Interface (CLI)](https://en.wikipedia.org/wiki/Command-line_interface): a **terminal emulator** with a **shell** application.
 ```
 
-Nội dung trên thực chất là một dãy các bytes theo hệ thập lục phân (hệ đếm cơ số 16) - [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal), hay còn gọi là [hex dump](https://en.wikipedia.org/wiki/Hex_dump), mà bạn nhìn thấy dưới đây:
+Nội dung trên thực chất là một dãy các bytes theo hệ thập lục phân (hệ đếm cơ số 16) - [hexadecimal](http://raboninco.com/1KG3r), hay còn gọi là [hex dump](http://raboninco.com/1KG4u), mà bạn nhìn thấy dưới đây:
 
 ```hex
 00000000  23 20 49 6e 74 72 6f 64  75 63 74 69 6f 6e 20 74  |# Introduction t|
@@ -209,11 +210,11 @@ _Lưu ý: Trong các hệ điều hành Unix, mọi thứ trong hệ thống đ�
 
 ## Home Directory
 
-Khi bạn mở một [terminal](https://en.wikipedia.org/wiki/Command-line_interface) mới, cửa sổ terminal sẽ hiển thị **command line - dòng lệnh** để người dùng gõ **command - lệnh**. Một lệnh là một chỉ thị yêu cầu máy tính thực hiện một thao tác nào đó, ví dụ: chạy một chương trình.
+Khi bạn mở một [terminal](http://raboninco.com/1JlEf) mới, cửa sổ terminal sẽ hiển thị **command line - dòng lệnh** để người dùng gõ **command - lệnh**. Một lệnh là một chỉ thị yêu cầu máy tính thực hiện một thao tác nào đó, ví dụ: chạy một chương trình.
 
-Thư mục hiện hành của bạn đang là [**home directory**](https://en.wikipedia.org/wiki/Home_directory). Home directory là thư mục được dùng làm repository để chứa các tập tin, thư mục và chương trình của người dùng.
+Thư mục hiện hành của bạn đang là [**home directory**](http://raboninco.com/1KG71). Home directory là thư mục được dùng làm repository để chứa các tập tin, thư mục và chương trình của người dùng.
 
-Ví dụ, nếu username của bạn là `lythanhphu`, home directory của bạn trên Linux sẽ là `/home/lythanhphu`, còn trên Mac OS X sẽ là `/Users/lythanhphu`.
+Ví dụ, nếu username của bạn là `haitac`, home directory của bạn trên Linux sẽ là `/home/haitac`, còn trên Mac OS X sẽ là `/Users/haitac`.
 
 | Ubuntu Desktop 16.04                                                              |
 | --------------------------------------------------------------------------------- |
@@ -227,7 +228,7 @@ Ví dụ, nếu username của bạn là `lythanhphu`, home directory của bạ
 | ------------------------------------------------------------- |
 | ![Windows 10 Terminal Launch](terminal_windows_10_launch.gif) |
 
-Trên các hệ Unix, home directory thường được biểu thị bằng [**`~`** (tilde)](https://www.gnu.org/software/bash/manual/html_node/Tilde-Expansion.html).
+Trên các hệ Unix, home directory thường được biểu thị bằng [**`~`** (tilde)](http://raboninco.com/1KGDG).
 
 Dòng lệnh tắt "`~`" chỉ về home directory mà người dùng đang đăng nhập vào.
 
@@ -236,27 +237,27 @@ Dòng lệnh tắt "`~username`" chỉ về home directory của 1 người dùn
 
 ```bash
 $ ~
-bash: /home/lythanhphu: is a directory
+bash: /home/haitac: is a directory
 $ ~theprophete
 bash: /home/theprophete: is a directory
 ```
 
 ## Current Working Directory (Thư mục làm việc hiện hành)
 
-**Thư mục hiện hành**, còn gọi là [**thư mục làm việc hiện hành (CWD)**](https://en.wikipedia.org/wiki/Working_directory), là thư mục mà trong đó người dùng đang làm việc tại một thời điểm xác định. Thực tế, người dùng lúc nào cũng đang làm việc trong một thư mục nào đó.
+**Thư mục hiện hành**, còn gọi là [**thư mục làm việc hiện hành (CWD)**](http://raboninco.com/1KGG7), là thư mục mà trong đó người dùng đang làm việc tại một thời điểm xác định. Thực tế, người dùng lúc nào cũng đang làm việc trong một thư mục nào đó.
 
-Lệnh `pwd` sẽ trả về thư mục hiện hành. Ví dụ: nếu username của bạn là `lythanhphu`, trên Linux, lệnh `pwd` sẽ hiển thị kết quả như sau:
+Lệnh `pwd` sẽ trả về thư mục hiện hành. Ví dụ: nếu username của bạn là `haitac`, trên Linux, lệnh `pwd` sẽ hiển thị kết quả như sau:
 
 ```bash
 $ pwd
-/home/lythanhphu
+/home/haitac
 ```
 
 Hoặc như sau, nếu trên Mac OS X:
 
 ```bash
 $ pwd
-/Users/lythanhphu
+/Users/haitac
 ```
 
 ## Directory Listing (truy cập danh mục files và thư mục)
@@ -333,6 +334,7 @@ trả về kết quả sau:
 ![Directory Listing](directory_listing.png)
 
 ## File Permissions (quyền hạn truy cập)
+(nếu bạn đang sử dụng window thì bạn không thể tạo thư mục và thực hành, macbook có sẵn terminal cứ bật lên xài nhé, cố gắn đọc hiểu nhé!)
 
 Các hệ điều hành Linux đều có hỗ trợ phân quyền - [permissions](<(https://en.wikipedia.org/wiki/File_system_permissions)>).
 
@@ -340,9 +342,9 @@ Phân quyền giúp kiểm soát các quyền **read** (đọc, xem nội dung f
 
 Các quyền trên được phân cho 3 nhóm người dùng (**classes**): **owner** - chủ sở hữu của file, **group** - nhóm mà owner (chủ sở hữu) đang thuộc về, và all **other** users - toàn bộ những người dùng khác. **Owner** - chủ sở hữu là người đã tạo file. **Group** - nhóm là tập hợp những người dùng có quyền hạn truy cập giống nhau.
 
-Phân quyền trong Unix được có thể biểu thị bằng [symbolic notation](https://en.wikipedia.org/wiki/File_system_permissions#Symbolic_notation) (ký hiệu) hoặc bằng [numeric (octal) notation](https://en.wikipedia.org/wiki/File_system_permissions#Numeric_notation) (số dạng bát phân).
+Phân quyền trong Unix được có thể biểu thị bằng [symbolic notation](http://raboninco.com/1KGMu) (ký hiệu) hoặc bằng [numeric (octal) notation](http://raboninco.com/1KGg7) (số dạng bát phân).
 
-Bạn dùng lệnh [`chmod`](<https://en.wikipedia.org/wiki/Modes_(Unix)>) để [phân quyền file](https://en.wikipedia.org/wiki/File_system_permissions#Permissions) cho từng nhóm (owner, group, others).
+Bạn dùng lệnh [`chmod`](<https://en.wikipedia.org/wiki/Modes_(Unix)>) để [phân quyền file](http://raboninco.com/1KGbQ) cho từng nhóm (owner, group, others).
 
 ### Symbolic Notation (phân quyền dùng ký hiệu)
 
@@ -386,7 +388,7 @@ $ ls -lad Music
 drwxr-x---  2 lythanhphu students 4096 Th05 31 15:10 Music
 ```
 
-_Lưu ý: để có thể phân quyền dùng số với lệnh `chmod`, bạn phải hiểu cách diễn đạt các giá trị bằng số. Bạn có thể nhờ hỗ trợ từ [permissions calculator](http://permissions-calculator.org/)._
+_Lưu ý: để có thể phân quyền dùng số với lệnh `chmod`, bạn phải hiểu cách diễn đạt các giá trị bằng số. Bạn có thể nhờ hỗ trợ từ [permissions calculator](http://raboninco.com/1KGgx)._
 
 ## Path (đường dẫn)
 
@@ -427,12 +429,12 @@ Có hai dạng đường dẫn cơ bản: **absolute paths** và **relative path
 
 Absolute path - đường dẫn tuyệt đối là đường dẫn có điểm xuất phát từ **root directory** (thư mục gốc).
 
-Ví dụ, đường dẫn tuyệt đối đến thư mục `Music` của `lythanhphu` là `/home/lythanhphu/Music`.
+Ví dụ, đường dẫn tuyệt đối đến thư mục `Music` của `haitac` là `/home/haitac/Music`.
 
 ```text
 /
 └── home
-    └── lythanhphu
+    └── haitac
         └── Music
 ```
 
@@ -440,42 +442,42 @@ Ví dụ, đường dẫn tuyệt đối đến thư mục `Music` của `lythan
 
 Relative path - đường dẫn tương đối là đường dẫn có điểm xuất phát từ **thư mục hiện hành**.
 
-Nếu thư mục hiện hành đang là `lythanhphu`, đường dẫn tương đối đến thư mục `Music` của `lythanhphu` là `./Music`, hay ngắn gọn là `Music`:
+Nếu thư mục hiện hành đang là `haitac`, đường dẫn tương đối đến thư mục `Music` của `haitac` là `./Music`, hay ngắn gọn là `Music`:
 
 ```text
 /
 └── home
-    └── lythanhphu  <--- This is the current directory "."
+    └── haitac  <--- This is the current directory "."
         └── Music  <--- This is the location to point to from the current directory
 ```
 
-Nếu thư mục hiện hành đang là `/home`, đường dẫn tương đối đến thư mục `Music` của `lythanhphu` là `./lythanhphu/Music`, hay ngắn gọn là `lythanhphu/Music`:
+Nếu thư mục hiện hành đang là `/home`, đường dẫn tương đối đến thư mục `Music` của `haitac` là `./haitac/Music`, hay ngắn gọn là `haitac/Music`:
 
 ```text
 /
 └── home  <--- This is the current directory "."
-    └── lythanhphu
+    └── haitac
         └── Music  <--- This is the location to point to from the current directory
 ```
 
-Nếu thư mục hiện hành đang là `/home/theprophete`, đường dẫn tương đối đến thư mục `Music` của `lythanhphu` là `./../lythanhphu/Music`, hay ngắn gọn là `../lythanhphu/Music`.
+Nếu thư mục hiện hành đang là `/home/theprophete`, đường dẫn tương đối đến thư mục `Music` của `haitac` là `./../haitac/Music`, hay ngắn gọn là `../haitac/Music`.
 
 ```text
 /
 └── home
-    ├── lythanhphu
+    ├── haitac
     │   └── Music  <--- This is the location to point to from the current directory
     └── theprophete  <--- This is the current directory "."
 ```
 
-Bạn có thể cho một đường dẫn tương đối rất phức tạp một cách không cần thiết, khi đi qua nhiều lớp thư mục cha, thư mục con khác nhau để đến vị trí cần đến. Ví dụ, đường dẫn tương đối cho thư mục `Music` từ home directory của `lythanhphu` có thể là `./../yoda/../lythanhphu/Music`. Khi đó, đường đi của cây thư mục sẽ giống như hình bên dưới, trong khi ta chỉ cần để đơn giản là `./Music`, hoặc `Music`:
+Bạn có thể cho một đường dẫn tương đối rất phức tạp một cách không cần thiết, khi đi qua nhiều lớp thư mục cha, thư mục con khác nhau để đến vị trí cần đến. Ví dụ, đường dẫn tương đối cho thư mục `Music` từ home directory của `haitac` có thể là `./../yoda/../haitac/Music`. Khi đó, đường đi của cây thư mục sẽ giống như hình bên dưới, trong khi ta chỉ cần để đơn giản là `./Music`, hoặc `Music`:
 
 ```text
-.                       ..                      yoda                    ..                      lythanhphu              Music
+.                       ..                      yoda                    ..                      haitac              Music
 
 /                       /                       /                       /                       /                       /
 └── home                └── home  <--           └── home                └── home  <--           └── home                └── home
-    ├── lythanhphu  <--     ├── lythanhphu          ├── lythanhphu          ├── lythanhphu          ├── lythanhphu  <--     ├── lythanhphu
+    ├── haitac  <--     ├── haitac          ├── haitac          ├── haitac          ├── haitac  <--     ├── haitac
     │   └── Music           │   └── Music           │   └── Music           │   └── Music           │   └── Music           │   └── Music  <--
     └── yoda                └── yoda                └── yoda  <--           └── yoda                └── yoda                └── yoda
 ```
@@ -488,16 +490,16 @@ Ví dụ:
 
 ```bash
 $ pwd
-/home/lythanhphu
+/home/haitac
 $ cd Music
 $ pwd
-/home/lythanhphu/Music
+/home/haitac/Music
 $ cd ../../theprophete
 $ pwd
 /home/theprophete
 $ cd ~
 $ pwd
-/home/lythanhphu
+/home/haitac
 $ cd /home/yoda
 $ pwd
 /home/yoda
@@ -513,24 +515,24 @@ Command prompt - dấu nhắc dòng lệnh, hay gọt tắt là prompt - dấu n
 
 Dấu nhắc mặc định của _bash_ shell chứa tên của người dùng, tên máy tính và đường dẫn của thư mục hiện hành.
 
-Ví dụ, nếu thư mục hiện hành của người dùng `lythanhphu` là home directory (`~`) của chính bạn ấy, dấu nhắc sẽ trông như sau:
+Ví dụ, nếu thư mục hiện hành của người dùng `haitac` là home directory (`~`) của chính bạn ấy, dấu nhắc sẽ trông như sau:
 
 ```bash
-lythanhphu@golgoth-30:~$
+haitac@golgoth-30:~$
 ```
 
-Nếu người dùng `lythanhphu` thay đổi từ thư mục hiện hành qua thư mục khác, dấu nhắc sẽ thể hiện sự thay đổi đó:
+Nếu người dùng `haitac` thay đổi từ thư mục hiện hành qua thư mục khác, dấu nhắc sẽ thể hiện sự thay đổi đó:
 
 ```bash
-lythanhphu@golgoth-30:~$ cd ../theprophete
-lythanhphu@golgoth-30:/home/theprophete$
+haitac@golgoth-30:~$ cd ../theprophete
+haitac@golgoth-30:/home/theprophete$
 ```
 
 Dấu nhắc thường thể hiện đường dẫn tương đối đi từ home directory của người dùng đến thư mục hiện hành nếu thư mục hiện hành là thư mục con, cháu... của home directory, ví dụ `~/Music`.
 
 Dấu nhắc sẽ thể hiện đường dẫn tuyệt đối nếu thư mục hiện hành của người dùng không phải là thư mục con, cháu... của home directory của người dùng, ví dụ: `/home/theprophete`.
 
-Bạn có thể [định dạng lại dấu nhắc của shell](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Controlling-the-Prompt). Thậm chí có vài websites còn chỉ bạn cách [tùy chỉnh dấu nhắc](http://ezprompt.net/). Tuy nhiên, việc này không nằm trong nhiệm vụ của chúng ta hôm nay.
+Bạn có thể [định dạng lại dấu nhắc của shell](http://raboninco.com/1KGof). Thậm chí có vài websites còn chỉ bạn cách [tùy chỉnh dấu nhắc](http://raboninco.com/1KGpC). Tuy nhiên, việc này không nằm trong nhiệm vụ của chúng ta hôm nay.
 
 ## Directory Creation (tạo thư mục)
 
@@ -540,7 +542,7 @@ Ví dụ:
 
 ```
 $ pwd
-/home/lythanhphu
+/home/haitac
 $ mkdir Devel
 $ mkdir ./Music/Classical ./Music/Jazz
 $ ls ./Music
@@ -588,7 +590,7 @@ Ví dụ:
 ```bash
 $ touch foo.txt
 $ ls -la foo.txt
--rw-r--r-- 1 lythanhphu students 0 Th06 26 10:25 foo.txt
+-rw-r--r-- 1 haitac students 0 Th06 26 10:25 foo.txt
 ```
 
 _Lưu ý: Lệnh `touch` ban đầu được dùng để cập nhật thời gian thay đổi (truy cập) một file đã tạo sẵn._
@@ -596,14 +598,17 @@ _Lưu ý: Lệnh `touch` ban đầu được dùng để cập nhật thời gia
 ```bash
 $ touch foo.txt
 $ ls -la foo.txt
--rw-r--r-- 1 lythanhphu students 0 Th06 26 10:27 foo.txt
+-rw-r--r-- 1 haitac students 0 Th06 26 10:27 foo.txt
 ```
 
 ### Text File Editors (hiệu chỉnh tập tin văn bản)
 
-#### `vi` & `Vim`
+#### `vi` & `Vim`(không phải tẩy rữa bồn cầu đâu nhé!)
+một số máy không có sẵn vim nên các bạn có thể tải hoặc dùng nano nha.
+[xem anh toidicodedao su dung vim ne](http://raboninco.com/1KH3E)
 
-[`vi` là một công cụ cho phép hiệu chỉnh và làm việc với văn bản](https://en.wikipedia.org/wiki/Vi) từ buổi sơ khai của Unix (từ cuối những năm 1970). [`vi`] đã mặc nhiên trở thành công cụ chuẩn và được sử dụng rất phổ biến. [`Vim (Vi IMproved)`](<https://en.wikipedia.org/wiki/Vim_(text_editor)>), được tung ra năm 1991, là một bản sao của `vi` với nhiều tính năng hơn. [`Vim` có mặt trong hầu hết các hệ Unix](https://www.youtube.com/watch?v=CM7UP-un1vc) như Linux hay Apple OS X; `vi` chỉ là "alias" của `Vim`:
+
+[`vi` là một công cụ cho phép hiệu chỉnh và làm việc với văn bản](http://raboninco.com/1KGyE) từ buổi sơ khai của Unix (từ cuối những năm 1970). [`vi`] đã mặc nhiên trở thành công cụ chuẩn và được sử dụng rất phổ biến. [`Vim (Vi IMproved)`](<https://en.wikipedia.org/wiki/Vim_(text_editor)>), được tung ra năm 1991, là một bản sao của `vi` với nhiều tính năng hơn. [`Vim` có mặt trong hầu hết các hệ Unix](http://raboninco.com/1KGyo) như Linux hay Apple OS X; `vi` chỉ là "alias" của `Vim`:
 
 ![Vim Text Editor](vim_text_editor.png)
 
@@ -611,19 +616,19 @@ $ ls -la foo.txt
 
 `Vim` tiếp cận việc này dưới góc độ khác: công việc chiếm nhiều thời gian nhất của các lập trình viên, và ngay cả các nhà văn, đó là hiệu chỉnh chứ không phải viết mới, tức là thay đổi đoạn văn bản đã có sẵn. Vì thế, `Vim` chọn hướng cải tiến việc hiệu chỉnh văn bản. `Vim` có hẳn một bộ ngôn ngữ riêng giúp diễn đạt một cách chính xác những thay đổi mà một developer muốn thực hiện.
 
-Khi dùng `Vim`, cần phân biệt 2 khái niệm: [**command mode** và **insert mode**](https://www.keycdn.com/blog/vim-commands), và điều này gây bối rối, thậm chí là bực bội, cho những người mới dùng:
+Khi dùng `Vim`, cần phân biệt 2 khái niệm: [**command mode** và **insert mode**](http://raboninco.com/1KGza), và điều này gây bối rối, thậm chí là bực bội, cho những người mới dùng:
 
 > "Tôi đã dùng vim gần 2 năm nay, chủ yếu là vì tôi không biết làm sao để thoát khỏi nó. :)"
 
-Bạn **phải** bỏ thời gian để [học vim](https://www.freecodecamp.org/news/vim-isnt-that-scary-here-are-5-free-resources-you-can-use-to-learn-it-ab78f5726f8d/) vì công cụ này được cài đặt mặc định trong mọi hệ Unix, và nó có thể cũng sẽ là công cụ duy nhất mà bạn có trên bất kỳ server nào mà bạn cần kết nối và quản lý từ xa. `Vim` là một công cụ mà mọi quản trị viên hệ Unix PHẢI BIẾT.
+Bạn **phải** bỏ thời gian để [học vim](http://raboninco.com/1KH0I) vì công cụ này được cài đặt mặc định trong mọi hệ Unix, và nó có thể cũng sẽ là công cụ duy nhất mà bạn có trên bất kỳ server nào mà bạn cần kết nối và quản lý từ xa. `Vim` là một công cụ mà mọi quản trị viên hệ Unix PHẢI BIẾT.
 
-Bạn sẽ tìm được [rất nhiều](https://www.youtube.com/watch?v=ggSyF1SVFr4) [bài dạy](https://www.youtube.com/watch?v=wlR5gYd6um0) [online](https://medium.com/@_oleksii_/understanding-vim-1c0a9de7a334) về `vim`. Bạn thậm chí có thể [học về `vim` thông qua trò chơi](https://vim-adventures.com/).
+Bạn sẽ tìm được [rất nhiều](http://raboninco.com/1KH5X) [bài dạy](http://raboninco.com/1KH63) [online](http://raboninco.com/1KH6a) về `vim`. Bạn thậm chí có thể [học về `vim` thông qua trò chơi](http://raboninco.com/1KH77).
 
 #### Nano
 
-[`Nano`](https://www.nano-editor.org/) là một [công cụ hiệu chỉnh văn bản đơn giản](https://www.youtube.com/watch?v=45KO4KO2DTo) và [dễ học](https://www.howtoforge.com/linux-nano-command/) hơn `vim` cũng dành cho các hệ Unix. Các lệnh và dấu nhắc của `Nano` được hiển thị ở phía dưới màn hình.
+[`Nano`](https://www.nano-editor.org/) là một [công cụ hiệu chỉnh văn bản đơn giản](http://raboninco.com/1KH7W) và [dễ học](http://raboninco.com/1KH89) hơn `vim` cũng dành cho các hệ Unix. Các lệnh và dấu nhắc của `Nano` được hiển thị ở phía dưới màn hình.
 
-Bạn nên [dùng `Nano`](https://www.pluralsight.com/blog/it-ops/linux-text-editors-vi-nano) nếu bạn chỉ cần hiệu chỉnh nhanh một file nào đó. Nếu bạn muốn làm những công việc điều chỉnh phức tạp hơn, bạn nên dùng `Vim` hoặc [`Emacs`](https://www.gnu.org/software/emacs/).
+Bạn nên [dùng `Nano`](http://raboninco.com/1KH8b) nếu bạn chỉ cần hiệu chỉnh nhanh một file nào đó. Nếu bạn muốn làm những công việc điều chỉnh phức tạp hơn, bạn nên dùng `Vim` hoặc [`Emacs`](http://raboninco.com/1KH95).
 
 ## View the Content of a Text File (xem nội dung của một file văn bản)
 
@@ -635,7 +640,7 @@ Ví dụ:
 
 ```bash
 $ ls -la ~/.profile
--rw-r--r-- 1 lythanhphu students 655 Th05 31 15:10 /home/lythanhphu/.profile
+-rw-r--r-- 1 haitac students 655 Th05 31 15:10 /home/haitac/.profile
 $ cat ~/.profile
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
@@ -708,7 +713,7 @@ Lệnh `more` cũng còn khá đơn sơ. Bạn nên dùng một lệnh cao cấp
 Ví dụ:
 
 ```bash
-$ less ~/Devel/intek-sm-unix_shell_basics/README.md
+$ less ~/Devel/unix_shell_basics/README.md
 ```
 
 ![Shell Command `Less`](shell_command_less.png)
@@ -722,7 +727,7 @@ Nếu bạn chỉ cần xem vài dòng đầu tiên của file, có thể dùng 
 Ví dụ
 
 ```bash
-$ head -n 5 ~/Devel/intek-sm-unix_shell_basics/README.md
+$ head -n 5 ~/Devel/unix_shell_basics/README.md
 # Introduction to The Shell
 
 ![The Matrix: Neo](the_matrix_neo.jpg)
