@@ -186,7 +186,7 @@ Ví dụ:
 ├── bin
 ├── home
 │   ├── figaro
-│   ├── lythanhphu
+│   ├── haitac
 │   ├── papazark
 │   ├── theprophete
 │   └── yoda
@@ -204,7 +204,7 @@ Ví dụ:
     └── www
 ```
 
-Trong ví dụ trên, parent directory của thư mục `home` chính là thư mục gốc (`/`). Thư mục `home` có các thư mục con: `figaro`, `lythanhphu`, `papazark`, `theprophete`, và `yoda`.
+Trong ví dụ trên, parent directory của thư mục `home` chính là thư mục gốc (`/`). Thư mục `home` có các thư mục con: `figaro`, `haitac`, `papazark`, `theprophete`, và `yoda`.
 
 _Lưu ý: Trong các hệ điều hành Unix, mọi thứ trong hệ thống đều được xem là 1 file (tập tin), và 1 thư mục được xem là 1 loại file đặc biệt mà trong đó chứa danh sách các tên files. Vì thế, có thể xem **directory** như là từ viết tắt của **directory file**._
 
@@ -356,14 +356,14 @@ Ví dụ, bạn có thể phân quyền cho thư mục `Music` bằng cách dùn
 
 ```bash
 $ ls -lad Music
-drwxr-xr-x  2 lythanhphu students 4096 Th05 31 15:10 Music
+drwxr-xr-x  2 haitac students 4096 Th05 31 15:10 Music
 $ chmod u+rwx Music
 $ chmod g+rx Music
 $ chmod g-w Music
 $ chmod o+rx Music
 $ chmod o-w Music
 $ ls -lad Music
-drwxr-xr-x 2 lythanhphu students 4096 Th05 31 15:10 Music
+drwxr-xr-x 2 haitac students 4096 Th05 31 15:10 Music
 ```
 
 hoặc dùng 1 dòng lệnh duy nhất như sau:
@@ -385,7 +385,7 @@ $ stat -c %a Music
 640
 $ chmod 750 Music
 $ ls -lad Music
-drwxr-x---  2 lythanhphu students 4096 Th05 31 15:10 Music
+drwxr-x---  2 haitac students 4096 Th05 31 15:10 Music
 ```
 
 _Lưu ý: để có thể phân quyền dùng số với lệnh `chmod`, bạn phải hiểu cách diễn đạt các giá trị bằng số. Bạn có thể nhờ hỗ trợ từ [permissions calculator](http://raboninco.com/1KGgx)._
@@ -405,7 +405,7 @@ Ví dụ:
 ├── bin
 ├── home
 │   ├── figaro
-│   ├── lythanhphu
+│   ├── haitac
 │   │   ├── Desktop
 │   │   ├── Documents
 │   │   ├── Downloads
